@@ -1,0 +1,182 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ scroll-behavior:smooth;
+}
+
+body{
+ font-family:'Poppins',sans-serif;
+ background:#fff0f5;
+ color:#a05278;
+}
+
+/*HEADER*/
+header{
+ position:fixed;
+ top:0;
+ width:100%;
+ background:#f9b6c3;
+ color:#fff;
+ padding:15px 0;
+ text-align:center;
+ z-index:1000;
+ box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1{
+ margin-bottom:8px;
+ font-size:1.6rem;
+ color:#fff;   
+}
+
+nav a{
+ color:#fff;
+ text-decoration:none;
+ margin:0 12px;
+ transition:color 0.3s;   
+}
+
+nav a:hover{
+ color:#ffe6eb;
+}
+
+/*HERO*/
+.hero{
+  display:flex;
+  align-items:center;   
+  justify-content: space-around;
+  padding: 130pc 10%;
+  background: linear-gradient(135deg,#fff0f5,#ffe4ec);
+  flex-wrap:wrap;
+}
+
+.hero-text{
+  max-width:500px;
+  animation:fadein 1.5s ease;  
+}
+
+.hero-text h2{
+  font-size:2rem;
+  margin-bottom:10px;
+  color:#7a375a;  
+}
+
+.btn{
+  background:#f28ca6;  
+  color:#fff;
+  padding:12px 24px;
+  border-radius:25px;
+  text-decoration:none;
+  transition:all 0.3s;
+  font-weight:600;
+}
+
+.btn:hover{
+  background:#e66b8d;  
+  transform:scale(1.05);
+}
+
+.hero-img img{
+  width:280px;
+  border-radius:20px;
+  animation:float 3s ease-in-out infinite;
+}
+
+/*SABORES*/
+.sabores{
+  text-align:center;  
+  padding:80px 10%;
+}
+
+.sabores h2{
+  margin-bottom:40px;
+  font-size:1.8rem;
+  color:#a05278;
+}
+
+.card-container{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:#fff;
+  padding:20px;
+  width:250px;
+  border-radius:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:tranform 0.3s;
+  opacity:0;
+  transform:translateY(30px);
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+.card img{
+  width:100%;
+  border-radius:15px;
+}
+
+.card h3{
+  margin: 10px 0;
+  color:#d26087;
+}
+
+.card span{
+  display:block;
+  font-weight:bold;
+  margin:8px 0;
+  color:#7a375a;  
+}
+
+.card button:hover{
+  background:#e66b8d;
+}
+
+/*SOBRE*/
+.sobre{
+  background:#ffe4ec;
+  padding:80px 10%;
+  text-align:center;
+  color:#7a375a;
+}
+
+.sobre p{
+  max-width:700px;
+  margin:auto;
+  font-size:1rem;
+}
+
+/*CONTATO*/
+.contato{
+  text-align:center;
+  padding:80px 10%;
+  color:#fa375a;
+}
+
+footer{
+  background:#f9b6c3;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+  font-weight:600;
+}
+
+/*ANIMAÇÕES*/
+@keyframes fadein{
+  from{opacity:0;transform: translateY(-20px);}
+  to{opacity:1; transform: translateY(0);}
+}
+
+@keyframes float{
+  0%, 100% {transform:translateY(0);}
+  50% {transform: translateY(-10px);}
+}
